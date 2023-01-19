@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+
+<body>
+  <main>
+<h1 id="title">Titulo<h1>
+<p id="description">Texto p</p>
+<form id="survey-form" action="submit">
+  
+<fieldset>
+  <legend>Survey</legend>
+
+  <label id="name-label" for="name">Name</label>
+    <input id="name" type="text" placeholder="name" required></input>
+
+  <label id="email-label" for="email">Email</label>
+    <input id="email" type="email" placeholder="email" required></input>
+
+  <label id="number-label" for="number">Number</label>
+    <input id="number" type="number" min="1" max="10" placeholder="number"></input>
+
+    <label for="dropdown">Choose one:</label>
+
+<select name="" id="dropdown">
+    <option value="">--Please choose an option--</option>
+    <option value="dog">Dog</option>
+    <option value="cat">Cat</option>
+</select>
+
+    <input type="submit" />
+</fieldset>
+</form>
+  </main>
+</body>
