@@ -1,36 +1,134 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Survey Form</title>
 </head>
 
 <body>
-  <main>
-<h1 id="title">Titulo<h1>
-<p id="description">Texto p</p>
-<form id="survey-form" action="submit">
+<div class="body_color">
+  <header class="main_header">
+    <h1 id="title">freeCodeCamp Survey Form<h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+  </header>
+    
+
+  <main class="main">
   
-<fieldset>
-  <legend>Survey</legend>
+    <form id="survey-form" action="">
 
-  <label id="name-label" for="name">Name</label>
-    <input id="name" type="text" placeholder="name" required></input>
+    <fieldset class="main_fieldset">
+      <legend>Survey</legend>
 
-  <label id="email-label" for="email">Email</label>
-    <input id="email" type="email" placeholder="email" required></input>
+      <label id="name-label" for="name">Name</label>
+        <input 
+        id="name" 
+        type="text" 
+        placeholder="name" 
+        required>
+      </input>
 
-  <label id="number-label" for="number">Number</label>
-    <input id="number" type="number" min="1" max="10" placeholder="number"></input>
+      <label id="email-label" for="email">Email</label>
+        <input 
+        id="email" 
+        type="email" 
+        placeholder="email" 
+        required>
+      </input>
 
-    <label for="dropdown">Choose one:</label>
+      <label id="number-label" for="number">Age (optional)</label>
+        <input 
+        id="number" 
+        type="number" 
+        min="1" 
+        max="10" 
+        placeholder="number">
+      </input>
 
-<select name="" id="dropdown">
-    <option value="">--Please choose an option--</option>
-    <option value="dog">Dog</option>
-    <option value="cat">Cat</option>
-</select>
+    </fieldset>
 
-    <input type="submit" />
-</fieldset>
-</form>
+    <fieldset class="main_fieldset"> 
+      <label for="dropdown">Which option best describes your current role?</label>
+      
+      <select name="" id="dropdown">
+          <option value="">Select current role</option>
+          <option value="student">Student</option>
+          <option value="full_time">Full time job</option>
+          <option value="other">Other</option>
+      </select> 
+    </fieldset>
+
+    
+    <fieldset class="main_fieldset">
+      <label>Would you recommend freeCodeCamp to a friend?</label>
+      
+      <div class="radio_div">
+        <input 
+        id="definitely" 
+        type="radio" 
+        name="recommend" 
+        value=""/>
+        <label for="definitely">Definitely</label>
+      </div>
+
+      <div class="radio_div">
+        <input
+        id="maybe"
+        type="radio" 
+        name="recommend" 
+        value=""/>
+        <label for="maybe">Maybe</label>
+      </div>
+
+      <div class="radio_div">
+        <input
+        id="notSure"
+        type="radio" 
+        name="recommend" 
+        value=""/>
+        <label for="notSure">Not Sure</label>
+      </div>
+
+    </fieldset>
+    
+    <fieldset class="main_fieldset">
+
+      <label for="main_select">What is your favorite feature of freeCodeCamp?</label>
+
+      <select name="main_select" id="main_select">
+        <option value="">Select an option</option>
+        <option value="Challenges">Challenges</option>
+        <option value="Projects">Projects</option>
+        <option value="Others">Others</option>
+      </select>
+
+    </fieldset>
+
+    <fieldset class="main_fieldset">
+      <label for="checkbox">What would you like to see improved? (Check all that apply)</label>
+
+      <label><input type="checkbox" name="checkbox" value="Front-end"/>Front-end Projects</label>
+      <label><input type="checkbox" name="checkbox" value="Back-end"/>Back-end Projects</label>
+      <label><input type="checkbox" name="checkbox" value="Data Visualization"/>Data Visualization</label>
+      <label><input type="checkbox" name="checkbox" value="Challenges"/>Challenges</label>
+      <label><input type="checkbox" name="checkbox" value="Videos"/>Videos</label>
+    </fieldset>
+
+    <fieldset class="main_fieldset">
+
+    <label for="main_textarea">Any comments or suggestions?</label>
+    <textarea name="main_textarea" placeholder="Enter your comment here..."></textarea>
+
+    <input type="submit" value="Submit" />
+    </fieldset>
+
+    
+
+    </form>
   </main>
+</div>
 </body>
+</html>
