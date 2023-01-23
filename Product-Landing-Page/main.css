@@ -3,6 +3,8 @@ body{
     background-color: white;
     display: flex;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
 /* -------------------------HEADER */
@@ -41,16 +43,17 @@ body{
     flex-direction: column;
     justify-content: center;
     width: 40%;
+    box-sizing: border-box;
 }
 
 #main_section_header input[type="email"]{
-padding:3px;
+    padding:3px;
 }
 
 #main_section_form_submit{
     width: 50%;
     margin: 10px auto;
-    background: yellow;
+    background: #f1c40f;;
     border: none;
     color: black;
     font-weight: bold;
@@ -65,11 +68,14 @@ padding:3px;
 }
 
 #main_container_features{
+    display: flex;
+    flex-direction: column;
     
 }
 
 .main_container_grid{
     display: flex;
+    
 }
 
 .main_container_grid .icon{
@@ -79,7 +85,11 @@ padding:3px;
     height: 125px;
     width: 20vw;
     color: darkorange;
-    min-width: 150px;
+    
+}
+
+.desc{
+    width: 100%;
 }
 
 .desc h2{
@@ -87,4 +97,87 @@ padding:3px;
 }
 .desc p{
     margin-top: 0px;
+}
+/* -------------------------MAIN CONTAINER SECTION HOW IT WORKS*/
+#how-it-works{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+#video{
+    height: 305px;
+    width: 70%;
+}
+/* -------------------------MAIN CONTAINER SECTION PRICING*/
+
+#pricing{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+.level{
+    background-color: #ddd;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+
+.product ol{
+    list-style: none;
+    margin: auto;
+    padding: 0;
+}
+
+.product button{
+    border: 0;
+    margin: 15px 0;
+    background-color: #f1c40f;
+    font-weight: 400;
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+/* -------------------------FOOTER*/
+#footer{
+    margin-top: 20px;
+    background-color: #ddd;
+    padding: 10px;
+}
+
+#footer ul{
+    display: flex;
+    justify-content: end;
+    list-style: none;
+}
+
+#footer li{
+    padding: 0 10px;
+    
+}
+
+#footer li a{
+    color: black;
+    text-decoration: none;
+}
+
+#footer span{
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444;
 }
